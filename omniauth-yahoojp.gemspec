@@ -2,16 +2,16 @@
 require File.expand_path('../lib/omniauth-yahoojp/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["mikanmarusan"]
-  gem.email         = ["chiakifujimon@gmail.com"]
-  gem.description   = %q{Official OmniAuth strategy for Yahoo! JAPAN.}
-  gem.summary       = %q{Official OmniAuth strategy for Yahoo! JAPAN.}
-  gem.homepage      = "https://github.com/mikanmarusan/omniauth-yahoojp"
+  gem.authors       = ["shmokmt"]
+  gem.email         = ["32533860+shmokmt@users.noreply.github.com"]
+  gem.description   = %q{Unofficial OmniAuth strategy for Yahoo! JAPAN.}
+  gem.summary       = %q{Unofficial OmniAuth strategy for Yahoo! JAPAN.}
+  gem.homepage      = "https://github.com/shmokmt/omniauth-yahoo-jp"
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files         = `git ls-files`.split("\n")
   gem.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  gem.name          = "omniauth-yahoojp"
+  gem.name          = "omniauth-yahoo-jp"
   gem.require_paths = ["lib"]
   gem.version       = OmniAuth::YahooJp::VERSION
   gem.licenses      = "MIT"

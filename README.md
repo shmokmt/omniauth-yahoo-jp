@@ -13,7 +13,7 @@ Supports OAuth 2.0 Authorization Code flows. Read the Yahoo!JAPAN docs for more 
 Add to your `Gemfile`: 
 
 ```ruby
-gem 'omniauth-yahoojp'
+gem 'omniauth-yahoo-jp'
 ```
 
 Then `bundle install`.
@@ -26,7 +26,7 @@ YConnect API v2 lets you set scopes to provide granular access to different type
 
 ```ruby
 Rails.application.config.middleware.use OmniAuth::Builder do
-    provider :yahoojp, ENV['YAHOOJP_KEY'], ENV['YAHOOJP_SECRET'], 
+    provider :yahoo_jp, ENV['YAHOOJP_KEY'], ENV['YAHOOJP_SECRET'], 
     {
         scope: "openid profile email address"
     }
@@ -42,7 +42,7 @@ For example, to request `openid`, `profile`,  and `email` permissions and displa
 
 ```ruby
 Rails.application.config.middleware.use OmniAuth::Builder do
-    provider :yahoojp, ENV['YAHOOJP_KEY'], ENV['YAHOOJP_SECRET'], 
+    provider :yahoo_jp, ENV['YAHOOJP_KEY'], ENV['YAHOOJP_SECRET'], 
     {
         scope: "openid profile email",
         display: "popup"
@@ -56,7 +56,7 @@ OmniAuth YahooJp uses versioned API endpoints by default (current v2). You can c
 
 ```ruby
 Rails.application.config.middleware.use OmniAuth::Builder do
-    provider :yahoojp, ENV['YAHOOJP_KEY'], ENV['YAHOOJP_SECRET'], 
+    provider :yahoo_jp, ENV['YAHOOJP_KEY'], ENV['YAHOOJP_SECRET'], 
     {
         scope: "openid profile email address",
         client_options: {
@@ -70,6 +70,8 @@ end
 ## License
 
 Copyright (c) 2013 by mikanmarusan
+
+Copyright (c) 2021 by shmokmt
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
